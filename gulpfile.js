@@ -74,6 +74,7 @@ function buildScript(file, watch) {
       // .pipe(uglify())
       // .pipe(rename('app.min.js'))
       // .pipe(gulp.dest('./build'))
+      .pipe(gulp.dest('./build/'))
       .pipe(reload({stream:true}))
   }
 
