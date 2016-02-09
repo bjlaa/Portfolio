@@ -6,7 +6,7 @@
 import React from 'react';
 
 
-class Head extends React.Component {
+class FrontPage extends React.Component {
 	render() {
 		return (
 			<div className="head">
@@ -50,4 +50,4 @@ class Navigation extends React.Component {
 	}
 }
 
-export default Head;
+export default FrontPage;

@@ -1,18 +1,3 @@
-import $ from 'jquery';
-import React from 'react';
-import {ReactDOM, render} from 'react-dom';
-
-import { Router, Route, Navigation, Link, browserHistory } from 'react-router';
-import reactMixin from 'react-mixin';
-/*
-	Components Imports
-*/
-import FrontPage from '../components/front-page.js';
-import Skills from '../components/skills.js';
-import Work from '../components/work.js';
-import AboutMe from '../components/about-me.js';
-import NotFound from '../components/NotFound.js';
-
 /*
 	Data model:
 */
@@ -81,47 +66,4 @@ var data = {
 	]
 };
 
-
-/*
-	Main Component:
-*/
-
-class App extends React.Component {
-	render() {
-		return (
-			<div>
-				<Head />
-				<Skills data={data} />
-				<Work data={data} />
-				<AboutMe />
-			</div>
-		)
-	}
-}
-
-reactMixin.onClass(App, Navigation);
-
-/*
-	Routes
-*/
-var routes = (
-	<Router history={browserHistory} data={data}>
-		<Route path="/" component={FrontPage}/>
-		<Route path="/skills" component={Skills}/>
-		<Route path="/work" component={Work}/>
-		<Route path="/about-me" component={AboutMe}/>
-		<Route path="*" component={NotFound}/>
-	</Router>
-)
-
-/*
-	Renders to the DOM element with the id "main"
-*/
-
-var main = $('#main').get(0);
-/*
-ReactDOM.render(<App data={data} />, main);*/
-render(routes, main);
-
-
-
+export default data;
