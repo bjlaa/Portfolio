@@ -20,9 +20,7 @@ class SkillItem extends React.Component {
 				<div key={e.id}>
 					<h4>{e.title}</h4>
 					<img src={e.imageURL} alt={e.imageAlt}/>
-					<ul>
-						<li></li>
-					</ul>
+					<ul>{e.keywords}</ul>
 				</div>
 			)
 		});

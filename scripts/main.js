@@ -19,12 +19,11 @@ import NotFound from '../components/NotFound.js';
 
 var data = {
   	work: [
-		{	
-			id: "11",
-			title: "Build A Portfolio Site",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+  		{
+  			id: "11",
+  			title: "Porfolio",
 
-		},
+  		},
 		{	
 			id:"12",
 			title: "Online Resume",
@@ -34,25 +33,25 @@ var data = {
 		{
 			id:"13",
 			title: "Classic Arcade Game Clone",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			imageURL: "./css/arcade.jpg",
 		
 		},
 		{
 			id: "14",
 			title: "Website Optimisation",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			imageURL: "./css/speed.jpg",
 	
 		},
 		{
 			id: "15",
 			title: "Neighborhood Map Project",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			imageURL: "./css/gmaps.png",
 		
 		},
 		{	
 			id:"16",
 			title:"Feed Reader Testing",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			imageURL: "./css/jasmine.png",
 			
 		}
 	],
@@ -62,21 +61,21 @@ var data = {
 			title: "HTML/CSS",
 			imageAlt:"The HTML logo.",
 			imageURL: "css/html.svg",
-			keywords:["HTML5/CSS3", "Responsive Design", "Animations", "Sass"]
+			keywords:"<li>HTML5/CSS3 <br/> Responsive Design <br/> Animations <br/> Sass</li>"
 		},
 		{
 			id: "22",
 			title: "Javascript",
 			imageAlt:"The JS logo.",
 			imageURL: "css/javascript.svg",
-			keywords:["Javascript ES5 ES6", "jQuery", "Ajax"]
+			keywords:"<li>Javascript ES5/ES6 <br/> jQuery <br/> Ajax</li>"
 		},	
 		{
 			id: "23",
 			title: "Frameworks",
 			imageAlt: "The React logo.",
 			imageURL: "css/react.svg",
-			keywords:["React", "Bootstrap", "Backbone/Knockout", "Jasmine"]
+			keywords:"<li>React <br/> Bootstrap <br/> Backbone/Knockout <br/> Jasmine</li>"
 		},	
 	]
 };
@@ -90,7 +89,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Head />
+				<FrontPage />
 				<Skills data={data} />
 				<Work data={data} />
 				<AboutMe />
@@ -106,11 +105,12 @@ reactMixin.onClass(App, Navigation);
 */
 var routes = (
 	<Router history={browserHistory} data={data}>
-		<Route path="/" component={FrontPage}/>
-		<Route path="/skills" component={Skills}/>
-		<Route path="/work" component={Work}/>
-		<Route path="/about-me" component={AboutMe}/>
-		<Route path="*" component={NotFound}/>
+		<Route path="/" component={FrontPage}>
+			<Route path="skills" component={Skills} />
+			<Route path="work" component={Work} />
+			<Route path="about-me" component={AboutMe} />
+			<Route path="*" component={NotFound} />
+		</Route>
 	</Router>
 )
 
@@ -121,7 +121,7 @@ var routes = (
 var main = $('#main').get(0);
 /*
 ReactDOM.render(<App data={data} />, main);*/
-render(routes, main);
+render(< App/>, main);
 
 
 
