@@ -1,6 +1,15 @@
 import $ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Head from '../components/head.js';
+import Skills from '../components/skills.js';
+import Work from '../components/work.js';
+import AboutMe from '../components/about-me.js';
+
+
+/*
+	Data model:
+*/
 
 var data = {
   	work: [
@@ -66,6 +75,11 @@ var data = {
 	]
 };
 
+
+/*
+	Main Component:
+*/
+
 class App extends React.Component {
 	render() {
 		return (
@@ -80,127 +94,8 @@ class App extends React.Component {
 }
 
 /*
-	Head Component: the title screen of this app
-	<Head />
+	Renders to the DOM element with the id "main"
 */
-
-class Head extends React.Component {
-	render() {
-		return (
-			<div className="head">
-				<h1>Benjamin Arias</h1>
-				<h2>Front-End Developer</h2>
-				<Hamburger />
-				<Menu />
-				<Navigation />
-			</div>
-		)
-	}
-}
-
-class Hamburger extends React.Component {
-	render() {
-		return (
-			<div className="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		)
-	}
-}
-class Menu extends React.Component {
-	render() {
-		return (
-			<div className="menu">
-				<div>Skills</div>
-				<div>Work</div>
-				<div>About Me</div>
-			</div>
-		)
-	}
-}
-class Navigation extends React.Component {
-	render() {
-		return (
-			<div className="navig"></div>
-		)
-	}
-}
-
-
-/*
-	Skills Component
-	<Skills />
-*/
-
-
-class Skills extends React.Component {
-	render() {
-		return (
-			<div className="skills">
-				<SkillItem data={this.props.data} />
-			</div>
-		)
-	}
-}
-class SkillItem extends React.Component {
-	render() {
-		var skill = this.props.data.skills.map(function(e) {
-			return (
-				<div key={e.id}>
-					<h4>{e.title}</h4>
-					<img src={e.imageURL} alt={e.imageAlt}/>
-					<ul>
-						<li></li>
-					</ul>
-				</div>
-			)
-		});
-		return (
-			<div className="skill-item">
-				{skill}
-			</div>
-		)
-	}
-}
-
-/*
-	Work Component
-	<Work />
-*/
-
-class Work extends React.Component {
-	render() {
-		var work = this.props.data.work.map(function(e) {
-			return (
-				<div className="work-item" key={e.id}>
-					<img src={e.imageURL} alt=""/>
-					<h4>{e.title}</h4>
-				</div>
-			)
-		});
-		return (
-			<div className="work">
-				{work}
-			</div>
-		)
-	}
-}
-
-
-/*
-	AboutMe Component: displaying contact infos, resume, bio ect...
-	<AboutMe />
-*/
-
-class AboutMe extends React.Component {
-	render() {
-		return (
-			<div className="about-me"></div>
-		)
-	}
-}
 
 var main = $('#main').get(0);
 ReactDOM.render(<App data={data} />, main);
