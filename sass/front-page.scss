@@ -1,70 +1,31 @@
-/*
-	SASS Variables
-*/
-/*
-	General
-*/
-html,
-body {
-  width: 100%;
-  height: 100%; }
-
-nav a, button {
-  min-height: 48px !important;
-  min-width: 48px; }
-
-img,
-a,
-embed,
-object,
-video {
-  max-width: 100%; }
-
-a:link {
-  text-decoration: none; }
-
-a:visited {
-  text-decoration: none; }
-
-a:hover {
-  text-decoration: none; }
-
-/*
-	SASS Mixins
-*/
-/*
-	Imports
-*/
-/*
-	Text mixin
-*/
-h1 {
-  font-size: 1.1em;
-  line-height: 1.1;
-  font-weight: 100%;
-  color: black; }
-
 /* Icon 4 */
+
+.hamburger {
+}
+
 .hamburger span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center; }
+  transform-origin: left center;
+}
 
 .hamburger span:nth-child(2) {
   top: 18px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center; }
+  transform-origin: left center;
+}
 
 .hamburger span:nth-child(3) {
   top: 36px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
-  transform-origin: left center; }
+  transform-origin: left center;
+}
 
 .hamburger.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
@@ -72,11 +33,13 @@ h1 {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
   top: -3px;
-  left: 8px; }
+  left: 8px;
+}
 
 .hamburger.open span:nth-child(2) {
   width: 0%;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .hamburger.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
@@ -84,4 +47,5 @@ h1 {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   top: 39px;
-  left: 8px; }
+  left: 8px;
+}

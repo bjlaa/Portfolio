@@ -2,7 +2,7 @@
 	Data model:
 */
 
-var data = {
+export const data = {
   	work: [
 		{	
 			id: "11",
@@ -66,4 +66,3 @@ var data = {
 	]
 };
 
-export default data;

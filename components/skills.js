@@ -2,13 +2,15 @@
 	Skills Component
 	<Skills />
 */
- import React from "react";
+import React from "react";
+import {data} from "../scripts/data-model";
+
 
 class Skills extends React.Component {
 	render() {
 		return (
 			<div className="skills">
-				<SkillItem data={this.props.data} />
+				<SkillItem data={data} />
 			</div>
 		)
 	}

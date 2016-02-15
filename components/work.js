@@ -4,8 +4,20 @@
 */
 
 import React from "react";
+import {data} from "../scripts/data-model";
 
 class Work extends React.Component {
+	render() {
+		return (
+			<div className="work">
+				<WorkItem data={data} />
+			</div>
+		)
+
+	}
+}
+
+class WorkItem extends React.Component {
 	render() {
 		var work = this.props.data.work.map(function(e) {
 			return (
@@ -16,7 +28,7 @@ class Work extends React.Component {
 			)
 		});
 		return (
-			<div className="work">
+			<div className="work-item">
 				{work}
 			</div>
 		)
