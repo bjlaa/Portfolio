@@ -4,7 +4,7 @@
 */
 
 import React from 'react';
-
+import ClassNames from 'classnames';
 
 class FrontPage extends React.Component {
 	goToSkills(event) {
@@ -19,25 +19,12 @@ class FrontPage extends React.Component {
 					<h1>Benjamin Arias</h1>
 					<h2>Front-End Developer</h2>
 				</div>
-				<Hamburger onClick={this.toggleMenu}/>
 				<Menu goToSkills={this.props.goToSkills}/>
-				<Navigation />
 			</div>
 		)
 	}
 }
 
-class Hamburger extends React.Component {
-	render() {
-		return (
-			<div className="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-		)
-	}
-}
 class Menu extends React.Component {
 	render() {
 		return (
@@ -48,13 +35,6 @@ class Menu extends React.Component {
 				<a href="/about-me">About Me</a>
 				</nav>
 			</div>
-		)
-	}
-}
-class Navigation extends React.Component {
-	render() {
-		return (
-			<div className="navig"></div>
 		)
 	}
 }
