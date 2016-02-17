@@ -1,18 +1,66 @@
 .frontpage {
 	min-height: 100%;
 	width: 100%;
-	background-color: #223761;
+	background: linear-gradient(#223761, transparent 90%);
 	color: white;
-	text-align: center;
+	padding-top: 2%;
+	display: flex;
+	flex-wrap: wrap;
 
-	h1 {
-		color: white;
-		font-size: 400%;
-		font-family: $font;
+	.head {
+		outline: solid white 3px;
+		width: 15%;
+		padding-left: 2%;
+		margin-left: 2%;
+		margin-right: 67%;
+		height: 100%;
+		h1 {
+			color: white;
+			font-size: 350%;
+			font-family: $font;
+			-webkit-margin-before: 0;
+			font-weight: 100;
+			-webkit-margin-after: 0;
+		}
+
+		h2 {
+			font-size: 200%;
+			font-family: $font;
+			font-weight: 100;
+			letter-spacing: 2px;
+			padding-left: 7%;
+		}		
 	}
+	.social {
+		font-size: 300%;
+		width: 10%;
+		.fa-github-square {
+			padding-left: 20%;
+		}
+	}
+	.menu {
+		width: 100%;
+		.skillsMenu,
+		.workMenu,
+		.aboutMenu {
+			outline: white solid 2px;
+			font-size: 200%;
+			font-family: $font;
+			font-weight: 100;
+			width: 20%;
+			text-align: center;
+		}
+		.aboutMenu {
+			margin-left: 60%;
+		}
+		.workMenu {
+			margin-left: 25%;
+			margin-top: 5%;
+		}
+		.skillsMenu {
+			margin-left: 40%;
+			margin-top: 5%;
+		}
 
-	h2 {
-		font-size: 200%;
-		font-family: $font;
 	}
 }

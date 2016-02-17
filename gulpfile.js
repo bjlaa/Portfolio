@@ -23,7 +23,7 @@ var historyApiFallback = require('connect-history-api-fallback')
 
 gulp.task('styles', function() {
   return gulp.src('./sass/styles.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./css'))
     .pipe(reload({stream:true}))
 });

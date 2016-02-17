@@ -28,12 +28,16 @@ video {
 a {
 	&:link {
 		text-decoration: none;
+		color: white;
 	}
 	&:visited {
 		text-decoration: none;
+		color: white;
 	}
 	&:hover {
 		text-decoration: none;
+		text-transform: uppercase;
+		transition: text-transform 1s;
 	}
 }
 
