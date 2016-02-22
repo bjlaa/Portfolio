@@ -1,9 +1,8 @@
 .frontpage {
 	min-height: 100%;
 	width: 100%;
-	background: linear-gradient(#223761, transparent 90%);
+	background: linear-gradient(black, transparent);
 	color: white;
-	padding-top: 2%;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -11,11 +10,13 @@
 		outline: solid white 3px;
 		width: 15%;
 		padding-left: 2%;
-		margin-left: 2%;
-		margin-right: 67%;
+		margin-left: 5%;
+		margin-right: 65%;
+		margin-top: 5%;
 		height: 100%;
 		h1 {
 			color: white;
+			padding-top: 10%;
 			font-size: 350%;
 			font-family: $font;
 			-webkit-margin-before: 0;
@@ -33,13 +34,17 @@
 	}
 	.social {
 		font-size: 300%;
+		margin-top: 4%;
 		width: 10%;
+		height: 100%;
 		.fa-github-square {
 			padding-left: 20%;
 		}
 	}
 	.menu {
 		width: 100%;
+		transform: translateY(-60%);
+
 		.skillsMenu,
 		.workMenu,
 		.aboutMenu {
@@ -49,18 +54,25 @@
 			font-weight: 100;
 			width: 20%;
 			text-align: center;
+			@extend .shade;
 		}
 		.aboutMenu {
-			margin-left: 60%;
-		}
-		.workMenu {
-			margin-left: 25%;
-			margin-top: 5%;
-		}
-		.skillsMenu {
-			margin-left: 40%;
-			margin-top: 5%;
+			transform: translate(300%) rotate(20deg);
+			margin: 0;
+			.aboutMenu:hover {
+				background-color: white;
+			}
 		}
 
+		.workMenu {
+			transform: translate(120%, 100%) rotate(-10deg);
+		}
+		.workMenu:hover {
+			color: red;
+		}
+		.skillsMenu {
+			transform: translate(250%, 200%) rotate(1deg);
+
+		}
 	}
 }

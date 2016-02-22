@@ -4,7 +4,6 @@
 */
 
 import React from 'react';
-import ClassNames from 'classnames';
 
 class FrontPage extends React.Component {
 	goToSkills(event) {
