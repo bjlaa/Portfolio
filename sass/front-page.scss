@@ -48,30 +48,36 @@
 		.skillsMenu,
 		.workMenu,
 		.aboutMenu {
+			display: block;
+			margin:0;
 			outline: white solid 2px;
 			font-size: 200%;
 			font-family: $font;
 			font-weight: 100;
-			width: 20%;
+			width: 100%;
 			text-align: center;
 			@extend .shade;
 		}
-		.aboutMenu {
-			transform: translate(300%) rotate(20deg);
+		.aboutLink {
+			transform: translate(600%, -200%) rotate(20deg);
+
 			margin: 0;
 			.aboutMenu:hover {
 				background-color: white;
 			}
 		}
 
-		.workMenu {
-			transform: translate(120%, 100%) rotate(-10deg);
+		.workLink {
+
+			transform: translate(400%) rotate(-15deg);
 		}
 		.workMenu:hover {
 			color: red;
 		}
-		.skillsMenu {
-			transform: translate(250%, 200%) rotate(1deg);
+
+		.skillLink {
+
+			transform: translate(800%, 200%) rotate(0deg);
 
 		}
 	}

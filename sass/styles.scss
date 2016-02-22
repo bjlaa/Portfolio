@@ -26,6 +26,7 @@ video {
 	max-width: 100%;
 }
 a {
+	display: inline-block;
 	&:link {
 		text-decoration: none;
 		color: white;
@@ -36,7 +37,7 @@ a {
 	}
 	&:hover {
 		text-decoration: none;
-		text-transform: uppercase;
+		color: black;
 		transition: text-transform 1s;
 	}
 }
