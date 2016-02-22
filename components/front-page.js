@@ -1,9 +1,11 @@
 /*
-	Head Component: the title screen of this app
-	<Head />
+	Front Page Component
+	<FrontPage />
 */
 
 import React from 'react';
+import Head from '../components/head.js';
+import Footer from '../components/footer.js';
 
 class FrontPage extends React.Component {
 	goToSkills(event) {
@@ -14,15 +16,13 @@ class FrontPage extends React.Component {
 	render() {
 		return (
 			<div className="frontpage">
-				<div className="head">
-					<h1>B. Arias</h1>
-					<h2>Front-End Developer</h2>
-				</div>
+				<Head />
 				<div className="social">
 					<a href="https://twitter.com/bjlaa"><i className="fa fa-twitter-square"></i></a>
 					<a href="https://github.com/bjlaa"><i className="fa fa-github-square"></i></a>
 				</div>
 				<Menu goToSkills={this.props.goToSkills}/>
+				<Footer />
 			</div>
 		)
 	}
