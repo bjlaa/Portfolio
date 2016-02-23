@@ -18,8 +18,8 @@ class FrontPage extends React.Component {
 			<div className="frontpage">
 				<Head />
 				<div className="social">
-					<a href="https://twitter.com/bjlaa"><i className="fa fa-twitter-square"></i></a>
-					<a href="https://github.com/bjlaa"><i className="fa fa-github-square"></i></a>
+					<a className="twitter" href="https://twitter.com/bjlaa"><i className="fa fa-twitter-square"></i></a>
+					<a className="github" href="https://github.com/bjlaa"><i className="fa fa-github-square"></i></a>
 				</div>
 				<Menu goToSkills={this.props.goToSkills}/>
 				<Footer />

@@ -9,7 +9,8 @@ class Head extends React.Component {
 		return (
 			<div className="head">
 					<h1>B. Arias</h1>
-					<h2>Front-End Developer</h2>
+					<h2>Front-End</h2>
+					<h2>Developer</h2>
 			</div>
 		)
 	}
