@@ -17,7 +17,7 @@ import NotFound from '../components/NotFound.js';
 	Routes
 */
 var routes = (
-	<Router history={createHistory()}>
+	<Router history={browserHistory}>
 		<Route path="/" component={FrontPage} />
 		<Route path="/skills"  component={Skills}/>
 		<Route path="/work" component={Work} />
