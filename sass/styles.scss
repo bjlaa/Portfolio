@@ -42,7 +42,35 @@ a {
 		transition: text-transform 1s;
 	}
 }
+/*
+	Backbutton
+*/
+.backbutton {
+	height: 100%;
+	width: 100%;
+	background: $wine;
+	color: $palerose;
+	font-size: 200%;
+	font-weight: 100;
+	text-align: left;
+	margin-left: 5%;
+	text-decoration: none;
+	border: none;
+	.fa {
+		color: $palerose;
+	}
+}
+/*
+	Footer
+*/
+footer {
+	width: 100%;
+	height: 100px;
+	font-family: $font;
+	text-align: center;
+	font-size: 90%;
 
+}
 /*
 	Imports
 */

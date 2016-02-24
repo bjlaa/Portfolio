@@ -2,7 +2,6 @@ import React from 'react';
 import {ReactDOM, render} from 'react-dom';
 
 import { Router, Route, Navigation, Link, browserHistory } from 'react-router';
-import reactMixin from 'react-mixin';
 import { createHistory } from 'history';
 
 /*
@@ -25,7 +24,7 @@ var routes = (
 		<Route path="/about-me" component={AboutMe} />
 		<Route path="*" component={NotFound} />
 	</Router>
-)
+);
 
 
 

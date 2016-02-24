@@ -1,0 +1,19 @@
+.work {
+	min-height: 100%;
+	width: 100%;
+	background: $wine;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+
+	.work-list {
+		width: 90%;
+		margin-left: 5%;
+
+		.work-item {
+			width: 50%;
+			display: inline-block;
+			font-size: 80%;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.about-me {
+	min-height: 100%;
+	width: 100%;
+	background: $wine;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+
+	.presentation {
+		width: 80%;
+		margin-top: 20%;
+		text-align: center;
+		font-family: $font;
+		font-size: 80%;
+		line-height: 1.5;
+	}	
+}

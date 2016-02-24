@@ -1,0 +1,31 @@
+.skills {
+	min-height: 100%;
+	width: 100%;
+	background: $wine;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: $font;
+
+	.skill-list {
+		width: 90%;
+		margin-left: 5%;
+		text-align: center;
+		
+		h4 {
+			font-weight: 100;
+			font-size: 150%;
+			margin:0;
+		}
+		.skill-item {
+			border-bottom: solid white 1px;
+			font-weight: 100;
+			font-size: 90%;
+		}
+
+		.skill-img {
+			width: 30%;
+			margin: 0;
+		}
+	}	
+}
