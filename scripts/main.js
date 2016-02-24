@@ -22,7 +22,7 @@ var routes = (
 		<Route path="/skills"  component={Skills}/>
 		<Route path="/work" component={Work} />
 		<Route path="/about-me" component={AboutMe} />
-		<Route path="*" component={NotFound} />
+		<Route path="/*" component={NotFound} />
 	</Router>
 );
 
