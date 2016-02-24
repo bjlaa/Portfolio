@@ -17,12 +17,12 @@ import NotFound from '../components/NotFound.js';
 	Routes
 */
 var routes = (
-	<Router history={browserHistory}>
+	<Router history={createHistory()}>
 		<Route path="/" component={FrontPage} />
 		<Route path="/skills"  component={Skills}/>
 		<Route path="/work" component={Work} />
 		<Route path="/about-me" component={AboutMe} />
-		<Route path="/*" component={NotFound} />
+		<Route path="*" component={NotFound} />
 	</Router>
 );
 
@@ -33,8 +33,6 @@ var routes = (
 */
 
 var main= document.querySelector("#main");
-/*
-ReactDOM.render(<App data={data} />, main);*/
 render(routes, main);
 
 

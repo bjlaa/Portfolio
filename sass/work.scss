@@ -9,6 +9,9 @@
 	.work-list {
 		width: 90%;
 		margin-left: 5%;
+		overflow: auto;
+		height: 500px;
+		
 
 		.work-item {
 			width: 50%;
