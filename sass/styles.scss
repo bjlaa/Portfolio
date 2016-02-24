@@ -69,7 +69,24 @@ footer {
 	font-family: $font;
 	text-align: center;
 	font-size: 90%;
-
+}
+/*
+	Not Found
+*/
+.not-found {
+	min-height: 100%;
+	width: 100%;
+	background: $wine;
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;	
+	font-family: $font;
+	font-size: 300%;
+	font-weight: 100;
+	.nf-text {
+		width: 100%;
+	}
 }
 /*
 	Imports

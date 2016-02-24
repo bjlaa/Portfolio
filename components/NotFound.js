@@ -8,7 +8,10 @@ import React from "react";
 class NotFound extends React.Component {
 	render() {
 		return (
-			<h1>404 Not Found</h1>		
+			<div className="not-found">
+				<p className="nf-text">404 Not Found</p>
+			</div>
+		
 		)
 	}
 }
