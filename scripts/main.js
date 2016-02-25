@@ -1,7 +1,7 @@
 import React from 'react';
-import {ReactDOM, render} from 'react-dom';
+import ReactDOM from 'react-dom';
 
-import { Router, Route, Navigation, Link, browserHistory } from 'react-router';
+import { Router, Route } from 'react-router';
 import { createHistory } from 'history';
 
 /*
@@ -33,6 +33,6 @@ var routes = (
 */
 
 var main= document.querySelector("#main");
-render(routes, main);
+ReactDOM.render(routes, main);
 
 
