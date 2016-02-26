@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Router, Route } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import { createHistory } from 'history';
 
 /*
@@ -24,7 +24,7 @@ var routes = (
 		<Route path="/about-me" component={AboutMe} />
 		<Route path="*" component={NotFound} />
 	</Router>
-);
+)
 
 
 

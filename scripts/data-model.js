@@ -7,38 +7,63 @@ export const data = {
 		{	
 			id: "11",
 			title: "Build A Portfolio Site",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			URL: "github.com/bjlaa/build-a-portfolio-site",
+			page: "bjlaa.github.io/build-a-portfolio-site",
+			imageURL: "../css/portfolio.svg",
 
 		},
 		{	
 			id:"12",
 			title: "Online Resume",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			URL: "https://github.com/bjlaa/Interactive-Resume",
+			page: "http://bjlaa.github.io/Interactive-Resume/",
+			imageURL: "../css/resume.svg",
 		
 		},
 		{
 			id:"13",
-			title: "Classic Arcade Game Clone",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			title: "Arcade Game Clone",
+			URL: "https://github.com/bjlaa/classic-arcade-game-clone",
+			page:"http://bjlaa.github.io/classic-arcade-game-clone/",
+			imageURL: "../css/game.svg",
 		
 		},
 		{
 			id: "14",
 			title: "Website Optimisation",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			URL: "https://github.com/bjlaa/website-optimization",
+			pages: "http://bjlaa.github.io/website-optimization/",
+			imageURL: "../css/speed.svg",
 	
 		},
 		{
 			id: "15",
-			title: "Neighborhood Map Project",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			title: "Neighborhood Map",
+			URL:"https://github.com/bjlaa/neighborhood-map",
+			page: "http://bjlaa.github.io/neighborhood-map/",
+			imageURL: "../css/gmaps.png",
 		
 		},
 		{	
 			id:"16",
 			title:"Feed Reader Testing",
-			imageURL: "http://images.huffingtonpost.com/2015-07-14-1436902565-6235018-SpongeBob_5.png",
+			URL: "https://github.com/bjlaa/feed-reader-testing",
+			page:"http://bjlaa.github.io/feed-reader-testing/",
+			imageURL: "../css/test.svg",
 			
+		},
+		{
+			id:"17",
+			title:"Movie Trailer Website",
+			URL: "https://github.com/bjlaa/movie-trailer-website",
+			page:"http://bjlaa.github.io/movie-trailer-website/",
+			imageURL: "../css/movie.svg"
+		},
+		{
+			id:"18",
+			title:"Tournament Results",
+			URL: "https://github.com/bjlaa/tournament-results",
+			imageURL: "../css/tournament.svg"
 		}
 	],
 	skills: [

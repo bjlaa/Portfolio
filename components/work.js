@@ -26,8 +26,8 @@ class WorkList extends React.Component {
 		var work = this.props.data.work.map(function(e) {
 			return (
 				<div className="work-item" key={e.id}>
-					<img src={e.imageURL} alt=""/>
-					<h4>{e.title}</h4>
+					<img className="work-img" src={e.imageURL} alt=""/>
+					<p>{e.title}</p>
 				</div>
 			)
 		});

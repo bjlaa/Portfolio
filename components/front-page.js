@@ -6,6 +6,7 @@
 import React from 'react';
 import Head from '../components/head.js';
 import Footer from '../components/footer.js';
+import {Link} from 'react-router';
 
 class FrontPage extends React.Component {
 	goToSkills(event) {
@@ -32,18 +33,26 @@ class Menu extends React.Component {
 	render() {
 		return (
 			<div className="menu">
-					<a className="aboutLink" href="/about-me">
-						<div className="aboutMenu">About Me</div>
-					</a>
-					<a className="workLink" href="/work">
-						<div className="workMenu">Work</div>
-					</a>									
-					<a className="skillLink" href="/skills" onClick={this.props.goToSkills}>
-						<div className="skillsMenu">Skills</div> 
-					</a>
+					<Link to="/about-me">
+						<a className="aboutLink" href="#">
+							<div className="aboutMenu">About Me</div>
+						</a>
+					</Link>	
+					<Link to="/work">
+						<a className="workLink" href="#">
+							<div className="workMenu">Work</div>
+						</a>
+					</Link>
+					<Link to="/skills">
+						<a className="skillLink" href="#" onClick={this.props.goToSkills}>
+							<div className="skillsMenu">Skills</div> 
+						</a>
+					</Link>			
+
 			</div>
 		)
 	}
 }
 
 export default FrontPage;
+

@@ -1,22 +1,28 @@
 .work {
 	min-height: 100%;
 	width: 100%;
-	background: $wine;
+	background: $paleblue;
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
+	font-family: $font;
+	font-weight: 100;
+	padding-left: 5%;
 
 	.work-list {
 		width: 90%;
-		margin-left: 5%;
+		text-align: center;
 		overflow: auto;
 		height: 500px;
-		
+
 
 		.work-item {
 			width: 50%;
 			display: inline-block;
-			font-size: 80%;
+			font-size: 90%;
+		}
+		.work-img {
+			max-width: 40%;
 		}
 	}
 }
