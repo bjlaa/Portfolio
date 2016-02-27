@@ -25,10 +25,10 @@ class WorkList extends React.Component {
 	render() {
 		var work = this.props.data.work.map(function(e) {
 			return (
-				<div className="work-item" key={e.id}>
+				<a className="work-item" key={e.id} href={e.URL}>
 					<img className="work-img" src={e.imageURL} alt=""/>
 					<p>{e.title}</p>
-				</div>
+				</a>
 			)
 		});
 		return (

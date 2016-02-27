@@ -7,8 +7,8 @@ export const data = {
 		{	
 			id: "11",
 			title: "Build A Portfolio Site",
-			URL: "github.com/bjlaa/build-a-portfolio-site",
-			page: "bjlaa.github.io/build-a-portfolio-site",
+			URL: "http://github.com/bjlaa/build-a-portfolio-site",
+			page: "http://bjlaa.github.io/build-a-portfolio-site",
 			imageURL: "../css/portfolio.svg",
 
 		},
