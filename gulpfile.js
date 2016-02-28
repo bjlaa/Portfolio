@@ -42,7 +42,7 @@ gulp.task('watch', function(){
   Browser Sync
 */
 gulp.task('browser-sync', function() {
-    browserSync({
+    browserSync.init({
         // we need to disable clicks and forms for when we test multiple rooms
         server : {},
         middleware : [ historyApiFallback() ],
