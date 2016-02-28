@@ -34,19 +34,19 @@ class Menu extends React.Component {
 		return (
 			<div className="menu">
 					<Link to="/about-me">
-						<a className="aboutLink" href="#">
+						<div className="aboutLink">
 							<div className="aboutMenu">About Me</div>
-						</a>
+						</div>
 					</Link>	
 					<Link to="/work">
-						<a className="workLink" href="#">
+						<div className="workLink">
 							<div className="workMenu">Work</div>
-						</a>
+						</div>
 					</Link>
 					<Link to="/skills">
-						<a className="skillLink" href="#" onClick={this.props.goToSkills}>
+						<div className="skillLink">
 							<div className="skillsMenu">Skills</div> 
-						</a>
+						</div>
 					</Link>			
 
 			</div>
