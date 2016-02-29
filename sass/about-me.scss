@@ -13,16 +13,60 @@
 
 	.presentation {
 		width: 80%;
-		margin-top: 20%;
 		padding-left: 10%;
 		text-align: center;
 		font-family: $font;
-		font-size: 80%;
+		font-size: 75%;
 		line-height: 1.5;
 		text-align: center;
 
 		.img-about {
+			@media (max-width: 450px) {
+				width: 100px;
+			}
+			@media (min-width:451px) {
+				width: 150px;
+			}
+			
+		}
+	}
+	.contact-me {
+		background: rgba(255, 255, 255, .5);
+		border-radius: 10px;
+		font-size: 80%;
+		margin-left: 10%;
+		padding: 2% 2% 5% 2%;
+		width: 80%;
+		.contact-title {
+			font-size: 170%;
+			color: $paleblue;
+			font-weight: 300;
+		}
+		input {
+			border-radius: 5px;
+			border-color: white;
 			width: 50%;
+			font-size: 90%;
+			font-family: $font;
+			line-height: 1.6;
+		}
+		textarea {
+			border-radius: 5px;
+			border-color: white;
+			height: 60px;	
+			width: 60%;
+			font-size: 100%;
+			font-family: $font;	
+			line-height: 1.6;
+		}
+		.form-send {
+			background-color: white;
+			font-family: $font;
+			color: $paleblue;
+			font-size: 100%;
 		}
 	}	
+}
+.about-me footer{
+	font-size: 70%;
 }
