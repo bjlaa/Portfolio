@@ -3,31 +3,42 @@
 	width: 100%;
 	background: $paleblue;
 	color: white;
-	display: flex;
-	flex-wrap: wrap;
+
 	font-family: $font;
 
 	.skill-list {
-		width: 90%;
-		margin-left: 5%;
+		display: flex;
+		flex-wrap: wrap;		
+		width: 100%;
 		text-align: center;
-		overflow: auto;
-		height: 500px;
 		
 		h4 {
-			font-weight: 100;
-			font-size: 150%;
+			font-weight: 200;
+			font-size: 200%;
 			margin:2%;
+			border-bottom: solid 1px white;
+			line-height: 1.7;
+			width: 50%;
+			margin-left: 25%;
+			margin-bottom: 10%;
 		}
 		.skill-item {
-			border-bottom: solid white 1px;
+			width: 33.3%;
 			font-weight: 100;
-			font-size: 90%;
+			font-size: 120%;
+			text-align: center;
 		}
 
 		.skill-img {
-			width: 30%;
+			width: 50%;
 			margin: 0;
+		}
+
+		.keywords {
+			margin-left:auto;
+			margin-right:auto;
+			line-height: 1.5;
+			width: 30%;
 		}
 	}	
 }

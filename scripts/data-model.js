@@ -72,7 +72,7 @@ export const data = {
 			title: "HTML/CSS",
 			imageAlt:"The HTML logo.",
 			imageURL: "css/html.svg",
-			keywords:["HTML5/CSS3, ", "Responsive Design, ", "Animations, ", "Sass"]
+			keywords:["HTML5, CSS3, ", "Responsive Design, ", "Animations, ", "Sass"]
 		},
 		{
 			id: "22",
@@ -86,7 +86,7 @@ export const data = {
 			title: "Frameworks",
 			imageAlt: "The React logo.",
 			imageURL: "css/react.svg",
-			keywords:["React, ", "Bootstrap, ", "Backbone/Knockout, ", "Jasmine"]
+			keywords:["React, ", "Bootstrap, ", "Backbone / Knockout, ", "Jasmine"]
 		},	
 	]
 };

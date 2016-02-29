@@ -26,7 +26,7 @@ class SkillItem extends React.Component {
 				<div className="skill-item" key={e.id}>
 					<h4>{e.title}</h4>
 					<img className="skill-img" src={e.imageURL} alt={e.imageAlt}/>
-					<p>{e.keywords}</p>
+					<div className="keywords">{e.keywords}</div>
 				</div>
 			)
 		});
