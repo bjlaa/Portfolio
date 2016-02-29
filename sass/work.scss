@@ -8,21 +8,44 @@
 	font-family: $font;
 	font-weight: 100;
 	padding-left: 5%;
+	.backbutton {
+		font-size: 400%;
+		margin: 0;
+	}
 
 	.work-list {
 		width: 90%;
 		text-align: center;
 		overflow: auto;
-		height: 500px;
+		height: 700px;
 
 
 		.work-item {
 			width: 50%;
 			display: inline-block;
 			font-size: 90%;
+			padding-top: 2%;
+		}
+		.work-item:hover {
+			background-color: rgba(255, 255, 255, 0.2);
+			transition: all .3s ease-out;
 		}
 		.work-img {
-			max-width: 40%;
+			@media (max-width:450px){
+				max-width: 40%;
+			}
+			@media (min-width:451px) and (max-width:767px){
+				max-width: 100px;
+			}
+			@media (min-width:768px) and (max-width:1024px){
+				width: 150px;
+			}
+			@media(min-width:1025px){
+				width: 200px;
+			}
 		}
+	}
+	footer {
+		margin-top: 0;
 	}
 }

@@ -19,6 +19,10 @@
 		font-size: 75%;
 		line-height: 1.5;
 		text-align: center;
+		@media (min-width: 768px) {
+			width: 50%;
+			margin-left: 15%;
+		}
 
 		.img-about {
 			@media (max-width: 450px) {
@@ -34,9 +38,14 @@
 		background: rgba(255, 255, 255, .5);
 		border-radius: 10px;
 		font-size: 80%;
-		margin-left: 10%;
+		margin-left: 20%;
 		padding: 2% 2% 5% 2%;
-		width: 80%;
+		width: 60%;
+		margin-top: 5%;
+		@media (max-width: 450px) {
+			width: 80%;
+			margin-left: 10%;
+		}
 		.contact-title {
 			font-size: 170%;
 			color: $paleblue;
@@ -45,25 +54,36 @@
 		input {
 			border-radius: 5px;
 			border-color: white;
-			width: 50%;
+			width: 90%;
 			font-size: 90%;
 			font-family: $font;
 			line-height: 1.6;
+			@media (min-width:940px) {
+				width: 50%;
+			}
 		}
 		textarea {
 			border-radius: 5px;
 			border-color: white;
-			height: 60px;	
-			width: 60%;
+			height: 80px;	
+			width: 90%;
 			font-size: 100%;
 			font-family: $font;	
 			line-height: 1.6;
+			@media (min-width:940px) {
+				width: 50%;
+			}
 		}
 		.form-send {
 			background-color: white;
 			font-family: $font;
 			color: $paleblue;
 			font-size: 100%;
+			cursor: pointer;
+			margin-top: 5%;
+		}
+		label {
+			cursor: pointer;
 		}
 	}	
 }
