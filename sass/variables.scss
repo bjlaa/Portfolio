@@ -1,7 +1,7 @@
 /*
 	Colors
 */
-$paleblue: #A9B4BC;
+$paleblue: #377B99;
 $lightgrey: white;
 $palerose: #9D8388;
 
@@ -9,9 +9,9 @@ $palerose: #9D8388;
 	Box-Shadow
 */
 .shade {
-	-webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
-	-moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
-	box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+	-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,.8);
+	-moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,.8);
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,.8);
 }
 
 /*

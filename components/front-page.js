@@ -33,22 +33,21 @@ class Menu extends React.Component {
 	render() {
 		return (
 			<div className="menu">
-					<Link to="/about-me">
-						<div className="aboutLink">
-							<div className="aboutMenu">About Me</div>
-						</div>
-					</Link>	
-					<Link to="/work">
-						<div className="workLink">
-							<div className="workMenu">Work</div>
-						</div>
-					</Link>
-					<Link to="/skills">
-						<div className="skillLink">
-							<div className="skillsMenu">Skills</div> 
-						</div>
-					</Link>			
-
+					<div className="aboutLink">
+						<Link to="/about-me">
+							<div className="aboutMenu">ABOUT ME</div>
+						</Link>
+					</div>
+					<div className="workLink">
+						<Link to="/work">
+							<div className="workMenu">WORK</div>
+						</Link>
+					</div>
+					<div className="skillLink">
+						<Link to="/skills">
+							<div className="skillsMenu">SKILLS</div> 
+						</Link>			
+					</div>
 			</div>
 		)
 	}

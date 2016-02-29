@@ -6,9 +6,9 @@ class Backbutton extends React.Component {
 		return (
 			<button className="backbutton">
 				<Link to='/'>
-					<a href="#">
+					<div>
 						<i className="fa fa-arrow-circle-left"></i>
-					</a>
+					</div>
 				</Link>
 			</button>
 		)
