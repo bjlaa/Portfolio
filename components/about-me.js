@@ -20,7 +20,7 @@ class AboutMe extends React.Component {
 						My Diploma obtained I chose to perfect my skills by taking the Senior Web Developer Nanodegree.</p> 
 					<p>Thank you for visiting my portfolio. On the Menu page click on work to see a showcase of my work. 
 					Click on Skills in order to get to know better what I can do.</p>
-					<p>If you wish to contact me, please scroll down and fill out the form below.</p>
+					<p>If you wish to contact me, please scroll down and fill out the form right below.</p>
 				</div>
 				<Contact />
 				<Footer />
@@ -41,14 +41,14 @@ class Contact extends React.Component {
 				<br/>
 				<label htmlFor="mail"> 
 					<p>And your email? </p> 
-					<input id="mail" type="text" placeholder="Type in your email" autoComplete="on"/>
+					<input id="mail" type="text" placeholder="Type in your email address" autoComplete="on"/>
 				</label>
 				<br/>
 				<label htmlFor="message"> 
 					<p>Please state the object of your inquiry </p> 
 					<textarea id="message" type="text" placeholder="Type in your message"/>
 				</label>
-				<input className="form-send" type="submit" value="Send"/>
+				<input className="form-send" type="submit" value="SEND"/>
 			</form>
 		)
 	}
