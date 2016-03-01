@@ -47,9 +47,9 @@
 			margin-left: 10%;
 		}
 		.contact-title {
-			font-size: 170%;
+			font-size: 200%;
 			color: $paleblue;
-			font-weight: 300;
+			font-weight: 400;
 		}
 		input {
 			border-radius: 5px;
@@ -84,6 +84,7 @@
 		}
 		label {
 			cursor: pointer;
+			font-size: 110%;
 		}
 	}	
 }
