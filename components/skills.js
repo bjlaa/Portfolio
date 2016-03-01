@@ -23,7 +23,7 @@ class SkillItem extends React.Component {
 	render() {
 		var skill = this.props.data.skills.map(function(e) {
 			return (
-				<div className="skill-item" key={e.id}>
+				<div className={e.class} key={e.id}>
 					<h4>{e.title}</h4>
 					<img className="skill-img" src={e.imageURL} alt={e.imageAlt}/>
 					<div className="keywords">{e.keywords}</div>

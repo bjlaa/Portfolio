@@ -26,16 +26,47 @@
 			margin-left: 25%;
 			margin-bottom: 10%;
 		}
-		.skill-item {
+		.skillhtml,
+		.skilljs,
+		.skillreact {
 			width: 33.3%;
 			font-weight: 200;
 			font-size: 120%;
 			text-align: center;
 		}
+		.skillhtml:hover,
+		.skilljs:hover,
+		.skillreact:hover {
+			.skill-img {
+				animation: hop .7s ease-in;
+			}
+			
+		}
 
 		.skill-img {
 			width: 50%;
 			margin: 0;
+			padding-bottom:5%;
+		}
+		@keyframes hop {
+			0%{
+				transform: translateY(0);
+			}
+			10% {
+				transform: translateY(-5%);
+			}
+			30% {
+				transform: translateY(0%);
+			}
+			50% {
+				transform: translateY(-3%);
+			}
+			65% {
+				transform: translateY(0%);
+			}
+			100%{
+				transform: scale(1);
+			}
 		}
 
 		.keywords {

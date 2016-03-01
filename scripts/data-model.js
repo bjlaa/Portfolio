@@ -70,6 +70,7 @@ export const data = {
 		{
 			id: "21",
 			title: "HTML/CSS",
+			class: "skillhtml",
 			imageAlt:"The HTML logo.",
 			imageURL: "css/html.svg",
 			keywords:["HTML5, CSS3, ", "Responsive Design, ", "Animations, ", "Sass"]
@@ -77,6 +78,7 @@ export const data = {
 		{
 			id: "22",
 			title: "Javascript",
+			class: "skilljs",
 			imageAlt:"The JS logo.",
 			imageURL: "css/javascript.svg",
 			keywords:["Javascript: ES2015, ", "jQuery, ", "Ajax"]
@@ -84,6 +86,7 @@ export const data = {
 		{
 			id: "23",
 			title: "Frameworks",
+			class:"skillreact",
 			imageAlt: "The React logo.",
 			imageURL: "css/react.svg",
 			keywords:["React, ", "Bootstrap, ", "Backbone / Knockout, ", "Jasmine"]
