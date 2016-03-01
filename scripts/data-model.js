@@ -88,7 +88,7 @@ export const data = {
 			title: "Frameworks",
 			class:"skillreact",
 			imageAlt: "The React logo.",
-			imageURL: "css/react.svg",
+			imageURL: "css/React.svg",
 			keywords:["React, ", "Bootstrap, ", "Backbone / Knockout, ", "Jasmine"]
 		},	
 	]
