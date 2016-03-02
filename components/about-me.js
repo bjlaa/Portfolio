@@ -9,6 +9,20 @@ import Backbutton from '../components/backbutton.js';
 
 
 class AboutMe extends React.Component {
+	constructor(props) {
+		super(props);
+
+		this.state= {
+			contactTitle : "Contact Me"
+		};
+	}
+
+	validateSending(event) {
+		event.preventDefault();
+		this.setState({contactTitle : "Thank you. I will get back to you ASAP."});
+		
+	}
+
 	render() {
 		return (
 			<div className="about-me">
@@ -22,33 +36,34 @@ class AboutMe extends React.Component {
 					Click on Skills in order to get to know better what I can do.</p>
 					<p>If you wish to contact me, please scroll down and fill out the form right below.</p>
 				</div>
-				<Contact />
+				<Contact validateSending={this.validateSending.bind(this)} contactTitle={this.state.contactTitle}/>
 				<Footer />
 			</div>
 		)
 	}
 }
 
-class Contact extends React.Component {
+class Contact extends React.Component{
 	render() {
 		return (
-			<form className="contact-me" action="">
-				<p className="contact-title">Contact Me</p>
+			<form className="contact-me" action="//formspree.io/benjamin.j.arias@gmail.com"
+      method="POST" onSubmit={this.props.validateSending}>
+				<p className="contact-title">{this.props.contactTitle}</p>
 				<label htmlFor="name">
 					<p>What's your name? </p>
-					<input id="name" type="text" placeholder="Type in your name" autoComplete="on"/>
+					<input name="name" id="name" type="text" placeholder="Type in your name" autoComplete="on"/>
 				</label>
 				<br/>
 				<label htmlFor="mail"> 
 					<p>And your email? </p> 
-					<input id="mail" type="text" placeholder="Type in your email address" autoComplete="on"/>
+					<input name="email" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" name="_replyto"/>
 				</label>
 				<br/>
 				<label htmlFor="message"> 
 					<p>Please state the object of your inquiry </p> 
-					<textarea id="message" type="text" placeholder="Type in your message"/>
+					<textarea name="text" id="message" type="text" placeholder="Type in your message"/>
 				</label>
-				<input className="form-send" type="submit" value="SEND"/>
+				<input name="send" className="form-send" type="submit" value="Send" />
 			</form>
 		)
 	}
