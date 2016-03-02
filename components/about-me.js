@@ -51,21 +51,21 @@ class Contact extends React.Component{
 			<form className="contact-me" action="//formspree.io/benjamin.j.arias@gmail.com"
       method="POST" onSubmit={this.props.validateSending}>
 				<p className="contact-title">{this.props.contactTitle}</p>
-				<label htmlFor="name">
+				<label name="name" htmlFor="name">
 					<p>What's your name? </p>
 					<input name="name" id="name" type="text" placeholder="Type in your name" autoComplete="on" disabled={this.props.disabled} required />
 				</label>
 				<br/>
-				<label htmlFor="mail"> 
+				<label name="email" htmlFor="mail"> 
 					<p>And your email? </p> 
 					<input name="email" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" disabled={this.props.disabled} name="_replyto" required/>
 				</label>
 				<br/>
-				<label htmlFor="message"> 
+				<label name="text" htmlFor="message"> 
 					<p>Please state the object of your inquiry </p> 
 					<textarea name="text" id="message" type="text" placeholder="Type in your message" disabled={this.props.disabled} required/>
 				</label>
-				<input name="send" className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
+				<input name="submit" name="send" className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
 			</form>
 		)
 	}
