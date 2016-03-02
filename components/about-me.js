@@ -19,7 +19,7 @@ class AboutMe extends React.Component {
 	}
 
 	validateSending(event) {
-		event.preventDefault();
+
 		this.setState({contactTitle : "Thank you. I will get back to you ASAP."});
 		this.setState({disabled: "true"});
 		
