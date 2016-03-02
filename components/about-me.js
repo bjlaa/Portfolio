@@ -58,14 +58,14 @@ class Contact extends React.Component{
 				<br/>
 				<label name="email" htmlFor="mail"> 
 					<p>And your email? </p> 
-					<input name="email" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" disabled={this.props.disabled} name="_replyto" required/>
+					<input name="_replyto" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" disabled={this.props.disabled}  required/>
 				</label>
 				<br/>
 				<label name="text" htmlFor="message"> 
 					<p>Please state the object of your inquiry </p> 
 					<textarea name="text" id="message" type="text" placeholder="Type in your message" disabled={this.props.disabled} required/>
 				</label>
-				<input name="submit" name="send" className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
+				<input className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
 			</form>
 		)
 	}
