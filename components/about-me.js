@@ -13,13 +13,15 @@ class AboutMe extends React.Component {
 		super(props);
 
 		this.state= {
-			contactTitle : "Contact Me"
+			contactTitle : "Contact Me",
+			disabled: false
 		};
 	}
 
 	validateSending(event) {
 		event.preventDefault();
 		this.setState({contactTitle : "Thank you. I will get back to you ASAP."});
+		this.setState({disabled: "true"});
 		
 	}
 
@@ -36,7 +38,7 @@ class AboutMe extends React.Component {
 					Click on Skills in order to get to know better what I can do.</p>
 					<p>If you wish to contact me, please scroll down and fill out the form right below.</p>
 				</div>
-				<Contact validateSending={this.validateSending.bind(this)} contactTitle={this.state.contactTitle}/>
+				<Contact validateSending={this.validateSending.bind(this)} contactTitle={this.state.contactTitle} disabled={this.state.disabled}/>
 				<Footer />
 			</div>
 		)
@@ -51,19 +53,19 @@ class Contact extends React.Component{
 				<p className="contact-title">{this.props.contactTitle}</p>
 				<label htmlFor="name">
 					<p>What's your name? </p>
-					<input name="name" id="name" type="text" placeholder="Type in your name" autoComplete="on"/>
+					<input name="name" id="name" type="text" placeholder="Type in your name" autoComplete="on" disabled={this.props.disabled} required />
 				</label>
 				<br/>
 				<label htmlFor="mail"> 
 					<p>And your email? </p> 
-					<input name="email" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" name="_replyto"/>
+					<input name="email" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" disabled={this.props.disabled} name="_replyto" required/>
 				</label>
 				<br/>
 				<label htmlFor="message"> 
 					<p>Please state the object of your inquiry </p> 
-					<textarea name="text" id="message" type="text" placeholder="Type in your message"/>
+					<textarea name="text" id="message" type="text" placeholder="Type in your message" disabled={this.props.disabled} required/>
 				</label>
-				<input name="send" className="form-send" type="submit" value="Send" />
+				<input name="send" className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
 			</form>
 		)
 	}
