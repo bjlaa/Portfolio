@@ -120,6 +120,9 @@
 		margin-left: auto;
 		margin-top: -5%;
 		padding-top:5%;
+		@media(max-width:450px){
+			margin-top: 0;
+		}
 	}
 	.skillsMenu,
 	.workMenu,
