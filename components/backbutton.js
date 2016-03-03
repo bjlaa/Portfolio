@@ -4,13 +4,13 @@ import {Link} from 'react-router';
 class Backbutton extends React.Component {
 	render() {
 		return (
-			<button className="backbutton">
-				<Link to='/'>
+			<Link to='/'>
+				<button className="backbutton">
 					<div>
 						<i className="fa fa-arrow-circle-left"></i>
 					</div>
-				</Link>
-			</button>
+				</button>
+			</Link>
 		)
 	}
 }
