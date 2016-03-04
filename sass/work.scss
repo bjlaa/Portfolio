@@ -7,7 +7,6 @@
 	flex-wrap: wrap;
 	font-family: $font;
 	font-weight: 100;
-	padding-left: 5%;
 	.backbutton {
 		font-size: 400%;
 		margin: 0;
@@ -18,6 +17,7 @@
 		text-align: center;
 		overflow: auto;
 		height: 700px;
+		padding-left: 5%;
 		@media(max-width:450px){
 			height:350px;
 		}
@@ -53,6 +53,10 @@
 			}
 		}
 	}
+
+	/*
+		Footer / Backbutton
+	*/
 	footer {
 		margin-top: 2%;
 		margin-left: -5%;

@@ -1,10 +1,23 @@
 .frontpage {
 	min-height: 100%;
 	width: 100%;
-	@media (min-width: 768px) {
+	@media (max-width: 450px) {
 	background: linear-gradient($paleblue, transparent 90%),
 				linear-gradient(rgba(128, 128, 128, .3), 
-				rgba(128, 128, 128, .3)), url('../css/foret.jpg');		
+				rgba(128, 128, 128, .3)), 
+				url('../css/foret/foret-medium.jpg');	
+	}
+	@media (min-width: 451px) and (max-width:1281px) {
+	background: linear-gradient($paleblue, transparent 90%),
+				linear-gradient(rgba(128, 128, 128, .3), 
+				rgba(128, 128, 128, .3)), 
+				url('../css/foret/foret-medium.jpg');	
+	}
+	@media (min-width: 451px) and (max-width:1281px) {
+	background: linear-gradient($paleblue, transparent 90%),
+				linear-gradient(rgba(128, 128, 128, .3), 
+				rgba(128, 128, 128, .3)), 
+				url('../css/foret/foret.jpg');	
 	}
 	background: $paleblue;
 	color: white;
