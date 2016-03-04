@@ -92,18 +92,19 @@
 			color: white;
 			padding-top: 25%;
 		}
-
-		.twitter:hover{
-			.fa-twitter-square {
-				animation: swing .6s ease-in-out;
+		
+		@media(min-width:768px){
+			.twitter:hover{
+				.fa-twitter-square {
+					animation: swing .6s ease-in-out;
+				}
 			}
+			.github:hover {
+				.fa-github-square {
+					animation: swing .6s ease-in-out;
+				}
+			}			
 		}
-		.github:hover {
-			.fa-github-square {
-				animation: swing .6s ease-in-out;
-			}
-		}
-
 	}
 	@keyframes swing {
 		0% {

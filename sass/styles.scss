@@ -39,7 +39,6 @@ a {
 	&:hover {
 		text-decoration: none;
 		color: $darkblue;
-		transition: text-transform 1s;
 	}
 }
 /*
@@ -48,9 +47,17 @@ a {
 .backlink {
 	height: 100%;
 	width: 8%;
-	margin-right: 92%;
+	margin-right: 87%;
 	margin-top: 2%;
 	margin-left:5%;
+	cursor:pointer;
+	text-decoration:none;
+		
+
+}
+button:focus {outline:0}
+.fa-arrow-circle-left:hover {
+	color:$darkblue ;
 }
 .backbutton {
 	height: 100%;
@@ -63,9 +70,16 @@ a {
 	margin-left: 5%;
 	text-decoration: none;
 	border: none;
+	cursor: pointer;
+	.backbutton:hover{
+		.fa-arrow-circle-left {
+			color:$darkblue;
+		}	
+	}
 	@media(max-width:450px){
 		margin-left:0;
 	}
+
 }
 /*
 	Footer
