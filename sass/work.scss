@@ -10,6 +10,7 @@
 	.backbutton {
 		font-size: 400%;
 		margin: 0;
+		color: white;
 	}
 
 	.work-list {
@@ -28,13 +29,14 @@
 			font-size: 110%;
 			font-weight: 200;
 			padding-top: 2%;
+			background-color: rgba(255,255,255,0.5);
 			@media(max-width:450px){
 				font-size: 100%;
 			}
 		}
 		.work-item:hover {
 			@media(min-width:768px){
-				background-color: rgba(255, 255, 255, 0.2);
+				background-color: rgba(255, 255, 255, 0.8);
 				transition: all .3s ease-out;				
 			}
 		}
@@ -59,6 +61,6 @@
 	*/
 	footer {
 		margin-top: 2%;
-		margin-left: -5%;
+		text-align: center;
 	}
 }
