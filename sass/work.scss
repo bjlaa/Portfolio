@@ -7,11 +7,6 @@
 	flex-wrap: wrap;
 	font-family: $font;
 	font-weight: 100;
-	.backbutton {
-		font-size: 400%;
-		margin: 0;
-		color: white;
-	}
 
 	.work-list {
 		width: 90%;
@@ -34,6 +29,10 @@
 				font-size: 100%;
 			}
 			.button-work {
+				@media(max-width:767px){
+					opacity: 1;
+					font-size: .8em;
+				}
 				opacity: 0;
 				z-index: 1000;
 				background-color: $darkblue;
@@ -42,9 +41,12 @@
 				padding-top: 3%;
 			}
 			.button-work:hover {
-				background-color: white;
-				color: $darkblue;
-				transition: all 5s ease-in-out;
+				@media(min-width:768px){
+					background-color: white;
+					color: $darkblue;
+					transition: all 5s ease-in-out;
+				}
+
 			}
 		}
 		.work-item:hover {		
