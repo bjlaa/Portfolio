@@ -8,6 +8,7 @@ export const data = {
   			id:"19",
   			title:"Meet-Up Event Planner",
   			URL: "https://github.com/bjlaa/meet-up-event-planner",
+  			page: "http://bjlaa.github.io/meet-up-event-planner/",
   			imageURL: "../css/meetup.svg"
   		},
 		{
