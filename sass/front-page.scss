@@ -5,19 +5,19 @@
 	background: linear-gradient($paleblue, transparent 90%),
 				linear-gradient(rgba(128, 128, 128, .3), 
 				rgba(128, 128, 128, .3)), 
-				url('../css/foret/foret-medium.jpg');	
+				url('../css/-1280.jpg');	
 	}
 	@media (min-width: 451px) and (max-width:1281px) {
 	background: linear-gradient($paleblue, transparent 90%),
 				linear-gradient(rgba(128, 128, 128, .3), 
 				rgba(128, 128, 128, .3)), 
-				url('../css/foret/foret-medium.jpg');	
+				url('../css/desk-1280.jpg');	
 	}
 	@media (min-width: 1282px) {
 	background: linear-gradient($paleblue, transparent 90%),
 				linear-gradient(rgba(128, 128, 128, .3), 
 				rgba(128, 128, 128, .3)), 
-				url('../css/foret/foret.jpg');	
+				url('../css/desk-1280.jpg') no-repeat center;	
 	}
 	background: $paleblue;
 	color: white;
