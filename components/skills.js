@@ -5,14 +5,12 @@
 import React from "react";
 import {data} from "../scripts/data-model";
 import Footer from '../components/footer.js';
-import Backbutton from '../components/backbutton.js';
 
 
 class Skills extends React.Component {
 	render() {
 		return (
 			<div className="skills">
-				<Backbutton />
 				<SkillItem data={data} />
 				<Footer />
 			</div>

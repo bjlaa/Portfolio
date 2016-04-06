@@ -5,7 +5,6 @@
 
 import React from "react";
 import Footer from '../components/footer.js';
-import Backbutton from '../components/backbutton.js';
 
 
 class AboutMe extends React.Component {
@@ -28,7 +27,6 @@ class AboutMe extends React.Component {
 	render() {
 		return (
 			<div className="about-me">
-				<Backbutton />
 				<div className="presentation">
 					<img className="img-about" src="../css/ninja.svg" alt="An image of my face"/>
 					<p>Hi, my name is Benjamin. I am a Front-End Ninja and Developer based in Berlin, Germany. 
