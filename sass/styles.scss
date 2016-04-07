@@ -44,47 +44,7 @@ a {
 
 	}
 }
-/*
-	Backbutton
-*/
-.backlink {
-	height: 100%;
-	width: 8%;
-	margin-right: 87%;
-	margin-top: 2%;
-	margin-left:1%;
-	cursor:pointer;
-	text-decoration:none;
-		
 
-}
-button:focus {outline:0}
-.fa-arrow-circle-left:hover {
-	@media (min-width:768px){
-		color: $darkblue;			
-	}
-}
-.backbutton {
-	height: 100%;
-	width: 100%;
-	background: $paleblue;
-	color: white;
-	font-size: 80px;
-	font-weight: 100;
-	text-align: left;
-	text-decoration: none;
-	border: none;
-	cursor: pointer;
-	.backbutton:hover{
-		.fa-arrow-circle-left {
-			color:$darkblue;
-		}	
-	}
-	@media(max-width:450px){
-		margin-left:0;
-	}
-
-}
 /*
 	Footer
 */
@@ -121,3 +81,4 @@ footer {
 @import 'skills';
 @import 'work';
 @import 'about-me';
+@import 'loader';

@@ -13,12 +13,13 @@ import Work from '../components/work.js';
 import AboutMe from '../components/about-me.js';
 import NotFound from '../components/NotFound.js';
 
+
 /*
 	Routes
 */
 var routes = (
 	<Router history={createHistory()}>
-		<Route path="/" component={FrontPage} />
+		<Route path="/" component={FrontPage} day = "wedny"/>
 		<Route path="/skills"  component={Skills}/>
 		<Route path="/work" component={Work} />
 		<Route path="/about-me" component={AboutMe} />

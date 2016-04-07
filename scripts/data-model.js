@@ -5,27 +5,27 @@
 export const data = {
   	work: [
   		{
-  			id:"19",
+  			id:"18",
   			title:"Meet-Up Event Planner",
   			URL: "https://github.com/bjlaa/meet-up-event-planner",
   			page: "http://bjlaa.github.io/meet-up-event-planner/",
   			imageURL: "../css/meetup.svg"
   		},
 		{
-			id:"18",
+			id:"17",
 			title:"Tournament Results",
 			URL: "https://github.com/bjlaa/tournament-results",
 			imageURL: "../css/tournament.svg"
 		},
 		{
-			id:"17",
+			id:"16",
 			title:"Movie Trailer Website",
 			URL: "https://github.com/bjlaa/movie-trailer-website",
 			page:"http://bjlaa.github.io/movie-trailer-website/",
 			imageURL: "../css/movie.svg"
 		},
 		{	
-			id:"16",
+			id:"15",
 			title:"Feed Reader Testing",
 			URL: "https://github.com/bjlaa/feed-reader-testing",
 			page:"http://bjlaa.github.io/feed-reader-testing/",
@@ -33,7 +33,7 @@ export const data = {
 			
 		},
 		{
-			id: "15",
+			id: "14",
 			title: "Neighborhood Map",
 			URL:"https://github.com/bjlaa/neighborhood-map",
 			page: "http://bjlaa.github.io/neighborhood-map/",
@@ -41,7 +41,7 @@ export const data = {
 		
 		},
 		{
-			id: "14",
+			id: "13",
 			title: "Website Optimisation",
 			URL: "https://github.com/bjlaa/website-optimization",
 			pages: "http://bjlaa.github.io/website-optimization/",
@@ -49,19 +49,11 @@ export const data = {
 	
 		},
 		{
-			id:"13",
+			id:"12",
 			title: "Arcade Game Clone",
 			URL: "https://github.com/bjlaa/classic-arcade-game-clone",
 			page:"http://bjlaa.github.io/classic-arcade-game-clone/",
 			imageURL: "../css/game.svg",
-		
-		},
-		{	
-			id:"12",
-			title: "Online Resume",
-			URL: "https://github.com/bjlaa/Interactive-Resume",
-			page: "http://bjlaa.github.io/Interactive-Resume/",
-			imageURL: "../css/resume.svg",
 		
 		},
 		{	
