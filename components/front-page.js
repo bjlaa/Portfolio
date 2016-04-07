@@ -23,7 +23,7 @@ class FrontPage extends React.Component {
 		this.setState({visiblePage:"load"});
 		setTimeout(function() {
 			this.loadingFrontPage();
-		}.bind(this), 3000)
+		}.bind(this), 4000)
 	}
 	loadingFrontPage() {
 		this.setState({visiblePage:"frontpage"});
