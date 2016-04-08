@@ -1,4 +1,8 @@
 .loader {
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1000;
 	height: 100vh;
 	width: 100%;
 	background: white;
@@ -7,6 +11,9 @@
 	font-size: 50px;
 	font-family: $font;
 	color: $darkblue;
+	position: absolute;
+	animation: fade .3s ease-in-out forwards;
+	animation-delay: 4s;
 }
 
 .hourglass {
@@ -24,5 +31,14 @@
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
 	}
 }

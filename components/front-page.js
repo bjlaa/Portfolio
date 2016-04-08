@@ -10,55 +10,22 @@ import {Link} from 'react-router';
 import Loader from '../components/loader.js';
 
 class FrontPage extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			visiblePage : ""
-		}
-	}
-	componentDidMount() {
-		this.loadingLoader();
-	}
-	loadingLoader() {
-		this.setState({visiblePage:"load"});
-		setTimeout(function() {
-			this.loadingFrontPage();
-		}.bind(this), 4000)
-	}
-	loadingFrontPage() {
-		this.setState({visiblePage:"frontpage"});
-	}
+
 	render() {
-		var visiblePage;
 		var loader = <Loader />;
-		var frontPage = 
-			<div className="frontpage">
-				<Head />
-				<div className="social">
-					<a className="twitter" href="https://twitter.com/bjlaa"><i className="fa fa-twitter-square"></i></a>
-					<a className="github" href="https://github.com/bjlaa"><i className="fa fa-github-square"></i></a>
-				</div>
-				<Menu />
-				<Footer />
-			</div>;
-
-
-		/*
-			Conditional rendering of the main component
-			after load time
-		*/
-		switch(this.state.visiblePage) {
-			case "load":
-				visiblePage = loader;
-				break;
-			case "frontpage":
-				visiblePage = frontPage;
-				break;
-		}
 
 		return (
 			<div>
-				{visiblePage}
+				<Loader />
+				<div className="frontpage">
+					<Head />
+					<div className="social">
+						<a className="twitter" href="https://twitter.com/bjlaa"><i className="fa fa-twitter-square"></i></a>
+						<a className="github" href="https://github.com/bjlaa"><i className="fa fa-github-square"></i></a>
+					</div>
+					<Menu />
+					<Footer />
+				</div>;
 			</div>
 		)
 	}
