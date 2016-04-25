@@ -10,7 +10,7 @@ import Footer from '../components/footer.js';
 class Skills extends React.Component {
 	render() {
 		return (
-			<div className="skills">
+			<div id='skills' className="skills">
 				<SkillItem data={data} />
 				<Footer />
 			</div>

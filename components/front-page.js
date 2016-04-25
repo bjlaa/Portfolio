@@ -5,51 +5,45 @@
 
 import React from 'react';
 import Head from '../components/head.js';
+import Menu from '../components/menu.js';
 import Footer from '../components/footer.js';
-import {Link} from 'react-router';
-import Loader from '../components/loader.js';
+import Work from '../components/work.js';
+import Skills from '../components/skills.js';
+import CVResume from '../components/skills.js';
+import AboutMe from '../components/about-me.js';
+import Contact from '../components/contact.js';
 
 class FrontPage extends React.Component {
-
+	scrollToDiv(target) {
+		var $target = $(target);
+		var $root = $('html,body');
+		if(target.length) {
+			$root.animate({
+				scrollTop: $target.offset().top
+			}, slow);			
+		}
+	}
 	render() {
-		var loader = <Loader />;
-
 		return (
 			<div>
-				<Loader />
 				<div className="frontpage">
-					<Head />
+					
 					<div className="social">
 						<a className="twitter" href="https://twitter.com/bjlaa"><i className="fa fa-twitter-square"></i></a>
 						<a className="github" href="https://github.com/bjlaa"><i className="fa fa-github-square"></i></a>
 					</div>
-					<Menu />
-					<Footer />
-				</div>;
-			</div>
-		)
-	}
-}
-
-class Menu extends React.Component {
-	render() {
-		return (
-			<div className="menu">
-					<div className="aboutLink">
-						<Link to="/about-me">
-							<div className="aboutMenu">ABOUT ME</div>
-						</Link>
+					<Menu scrollToDiv={this.scrollToDiv.bind(this)}/>
+					<div className='arrow'>
+						<i className="fa fa-angle-down" aria-hidden="true"></i>
 					</div>
-					<div className="workLink">
-						<Link to="/work">
-							<div className="workMenu">WORK</div>
-						</Link>
-					</div>
-					<div className="skillLink">
-						<Link to="/skills">
-							<div className="skillsMenu">SKILLS</div> 
-						</Link>			
-					</div>
+				</div>
+				<Head />
+				<Work/>
+				<Skills/>
+				<CVResume/>
+				<AboutMe/>
+				<Contact/>
+				<Footer/>
 			</div>
 		)
 	}

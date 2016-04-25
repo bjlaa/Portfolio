@@ -4,7 +4,7 @@
 */
 
 import React from "react";
-import Footer from '../components/footer.js';
+import Contact from '../components/contact.js';
 
 
 class AboutMe extends React.Component {
@@ -26,7 +26,7 @@ class AboutMe extends React.Component {
 
 	render() {
 		return (
-			<div className="about-me">
+			<div id='about' className="about-me">
 				<div className="presentation">
 					<img className="img-about" src="../css/ninja.svg" alt="An image of my face"/>
 					<p>Hi, my name is Benjamin. I am a Front-End Ninja and Developer based in Berlin, Germany. 
@@ -37,41 +37,11 @@ class AboutMe extends React.Component {
 					<p>If you wish to contact me, please scroll down and fill out the form right below.</p>
 				</div>
 				<Contact validateSending={this.validateSending.bind(this)} contactTitle={this.state.contactTitle} disabled={this.state.disabled}/>
-				<Footer />
 			</div>
 		)
 	}
 }
 
-class Contact extends React.Component{
-	render() {
-		return (
-			<form className="contact-me" action="http://formspree.io/benjamin.j.arias@gmail.com"
-      method="POST" onSubmit={this.props.validateSending}>
-				<p className="contact-title">{this.props.contactTitle}</p>
-				<label htmlFor="name">
-					<p>What's your name? </p>
-					<input name="name" id="name" type="text" placeholder="Type in your name" autoComplete="on" disabled={this.props.disabled} required />
-				</label>
 
-				<br/>
-
-				<label htmlFor="mail"> 
-					<p>And your email? </p>
-					<input name="_replyto" id="mail" type="text" placeholder="Type in your email address" autoComplete="on" disabled={this.props.disabled}  required/>
-				</label>
-
-				<br/>
-
-				<label htmlFor="message"> 
-					<p>Please state the object of your inquiry </p> 
-					<textarea name="message" id="message" placeholder="Type in your message" disabled={this.props.disabled} required/>
-				</label>
-
-				<input className="form-send" type="submit" value="Send" disabled={this.props.disabled} />
-			</form>
-		)
-	}
-}
 
 export default AboutMe;
