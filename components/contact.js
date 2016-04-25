@@ -4,11 +4,26 @@
 import React from 'react';
 
 class Contact extends React.Component{
+	constructor(props) {
+		super(props);
+
+		this.state= {
+			contactTitle : "Contact Me",
+			disabled: false
+		};
+	}
+
+	validateSending(event) {
+
+		this.setState({contactTitle : "Thank you. I will get back to you ASAP."});
+		/*this.setState({disabled: "true"});*/
+		
+	}
 	render() {
 		return (
 			<div id='contact'>
 				<form className="contact-me" action="http://formspree.io/benjamin.j.arias@gmail.com"
-	      method="POST" onSubmit={this.props.validateSending}>
+	      method="POST" onSubmit={this.validateSending}>
 					<p className="contact-title">{this.props.contactTitle}</p>
 					<label htmlFor="name">
 						<p>What's your name? </p>

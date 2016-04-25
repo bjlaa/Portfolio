@@ -8,22 +8,6 @@ import Contact from '../components/contact.js';
 
 
 class AboutMe extends React.Component {
-	constructor(props) {
-		super(props);
-
-		this.state= {
-			contactTitle : "Contact Me",
-			disabled: false
-		};
-	}
-
-	validateSending(event) {
-
-		this.setState({contactTitle : "Thank you. I will get back to you ASAP."});
-		/*this.setState({disabled: "true"});*/
-		
-	}
-
 	render() {
 		return (
 			<div id='about' className="about-me">
@@ -36,7 +20,6 @@ class AboutMe extends React.Component {
 					Click on Skills in order to get to know better what I can do.</p>
 					<p>If you wish to contact me, please scroll down and fill out the form right below.</p>
 				</div>
-				<Contact validateSending={this.validateSending.bind(this)} contactTitle={this.state.contactTitle} disabled={this.state.disabled}/>
 			</div>
 		)
 	}

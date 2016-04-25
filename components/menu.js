@@ -7,19 +7,19 @@ class Menu extends React.Component {
 	render() {
 		return (
 			<div className="menu">
-				<a>
+				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#work')}>
 					<div className="workLink">Work</div>
 				</a>
-				<a >
+				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#skills')}>
 					<div className="skillsLink">Skills</div> 
 				</a>
-				<a >
+				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#cvresume')}>
 					<div className="cvresumeLink">C.V./Resume</div> 
 				</a>	
-				<a >
+				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#about')}>
 					<div className="aboutLink">About Me</div>
 				</a>
-				<a >
+				<a className='menu-items' onClick={this.props.scrollToDiv.bind(this, '#contact')}>
 					<div className="contactLink">Contact</div> 
 				</a>		
 			</div>
