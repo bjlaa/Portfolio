@@ -37,29 +37,14 @@ a {
 		color: white;
 	}
 	&:hover {
+		@media (min-width:768px){
+						
+		}
 		text-decoration: none;
-		color: black;
-		transition: text-transform 1s;
+
 	}
 }
-/*
-	Backbutton
-*/
-.backbutton {
-	height: 100%;
-	width: 100%;
-	background: $paleblue;
-	color: $palerose;
-	font-size: 350%;
-	font-weight: 100;
-	text-align: left;
-	margin-left: 5%;
-	text-decoration: none;
-	border: none;
-	.fa {
-		color: $palerose;
-	}
-}
+
 /*
 	Footer
 */
@@ -96,3 +81,4 @@ footer {
 @import 'skills';
 @import 'work';
 @import 'about-me';
+@import 'loader';

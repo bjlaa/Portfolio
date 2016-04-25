@@ -1,0 +1,53 @@
+.loader {
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1000;
+	height: 100vh;
+	width: 100%;
+	background: $darkblue;
+	text-align: center;
+	padding-top: 10%;
+	font-size: 70px;
+	font-family: $font;
+	color: white;
+	position: absolute;
+	animation: fade .3s ease-in-out forwards;
+	animation-delay: 4s;
+}
+
+.hourglass {
+	font-size: 100px;
+	color: white;
+	animation: rotation 3s infinite ease-in-out;
+}
+
+.circle {
+	background-color: $paleblue;
+	border-radius: 100%;
+	width: 20%;
+	margin-left: 30%;
+	padding: 10%;
+}
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+	50% {
+		transform: rotate(180deg);
+		opacity: 0.6;
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		z-index: -1;
+	}
+}

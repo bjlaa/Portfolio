@@ -7,22 +7,78 @@
 	flex-wrap: wrap;
 	font-family: $font;
 	font-weight: 100;
-	padding-left: 5%;
 
 	.work-list {
 		width: 90%;
 		text-align: center;
-		overflow: auto;
-		height: 500px;
-
+		padding-left: 5%;
+		@media(max-width:450px){
+			height:350px;
+		}
 
 		.work-item {
 			width: 50%;
 			display: inline-block;
-			font-size: 90%;
+			font-size: 110%;
+			font-weight: 200;
+			padding-top: 2%;
+			background-color: rgba(255,255,255,0.5);
+			@media(max-width:450px){
+				font-size: 100%;
+			}
+			.button-work {
+				@media(max-width:767px){
+					opacity: 1;
+					font-size: .8em;
+				}
+				opacity: 0;
+				z-index: 1000;
+				background-color: $darkblue;
+				width: 50%;
+				color: white;
+				padding-top: 3%;
+			}
+			.button-work:hover {
+				@media(min-width:768px){
+					background-color: white;
+					color: $darkblue;
+					transition: all 5s ease-in-out;
+				}
+
+			}
+		}
+		.work-item:hover {		
+			@media(min-width:768px){
+				background-color: rgba(255, 255, 255, 0.7);
+				color: $darkblue;
+				transition: all .3s ease-out;				
+			}
+			.button-work {
+				opacity: 1;
+				transition: opacity .5s ease-in-out;
+			}
 		}
 		.work-img {
-			max-width: 40%;
+			@media (max-width:450px){
+				max-width: 40%;
+			}
+			@media (min-width:451px) and (max-width:767px){
+				max-width: 100px;
+			}
+			@media (min-width:768px) and (max-width:1024px){
+				width: 150px;
+			}
+			@media(min-width:1025px){
+				width: 200px;
+			}
 		}
+	}
+
+	/*
+		Footer / Backbutton
+	*/
+	footer {
+		margin-top: 2%;
+		text-align: center;
 	}
 }

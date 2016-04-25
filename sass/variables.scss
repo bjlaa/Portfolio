@@ -3,15 +3,15 @@
 */
 $paleblue: #377B99;
 $lightgrey: white;
-$palerose: #9D8388;
+$darkblue: #10526F;
 
 /*
 	Box-Shadow
 */
 .shade {
-	-webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,.6);
-	-moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,.6);
-	box-shadow: 4px 4px 0px 0px rgba(0,0,0,.6);
+	-webkit-box-shadow: 4px 4px 1px 0px rgba(0,0,0,.4);
+	-moz-box-shadow: 4px 4px 1px 0px rgba(0,0,0,.4);
+	box-shadow: 4px 4px 1px 0px rgba(0,0,0,.4);
 }
 
 /*

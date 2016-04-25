@@ -3,31 +3,110 @@
 	width: 100%;
 	background: $paleblue;
 	color: white;
-	display: flex;
-	flex-wrap: wrap;
+
 	font-family: $font;
 
 	.skill-list {
-		width: 90%;
-		margin-left: 5%;
+		display: flex;
+		flex-wrap: wrap;		
+		width: 100%;
 		text-align: center;
-		overflow: auto;
-		height: 500px;
-		
-		h4 {
-			font-weight: 100;
-			font-size: 150%;
+		border-top:solid $darkblue 1px;
+		border-bottom: solid $darkblue 1px;
+		padding-bottom: 3%;
+		background: rgba(255, 255, 255, .5);
+		color: $darkblue;
+		.title-skill {
+			font-weight: 200;
+			font-size: 200%;
 			margin:2%;
+			border-bottom: solid 1px white;
+			line-height: 1.7;
+			width: 50%;
+			margin-left: 25%;
+			margin-bottom: 10%;
+
+			@media (min-width:451px) and (max-width:767px){
+				font-size: 160%;
+				font-weight: 400;
+			}
+			@media(min-width:768px) and (max-width:1024px){
+				font-size: 180%;
+			}
+			@media (min-width: 1025px){
+				font-size: 180%;
+			}
 		}
-		.skill-item {
-			border-bottom: solid white 1px;
-			font-weight: 100;
-			font-size: 90%;
+		.skillhtml,
+		.skilljs,
+		.skillreact {
+
+			text-align: center;
+			@media (max-width:450px){
+				width: 100%;
+				font-size: 100%;
+				font-weight: 300;				
+			}
+			@media (min-width:451px) and (max-width:767px){
+				width: 100%;
+				font-size: 100%;
+				font-weight: 300;
+			}			
+			@media(min-width:768px) and (max-width:1024px){
+				font-size: 100%;
+				width: 33.3%;
+				font-weight: 200;
+			}
+			@media (min-width: 1025px){
+				font-size: 120%;
+				width: 33.3%;
+			}
+		}
+		.skillhtml:hover,
+		.skilljs:hover,
+		.skillreact:hover {
+			.skill-img {
+				@media (min-width:767px){
+					animation: hop .7s ease-in;
+				}
+			}
+			
 		}
 
 		.skill-img {
-			width: 30%;
+			width: 50%;
 			margin: 0;
+			padding-bottom:5%;
+			@media (max-width:767px){
+				width: 30%;
+			}
+		}
+		@keyframes hop {
+			0%{
+				transform: translateY(0);
+			}
+			10% {
+				transform: translateY(-5%);
+			}
+			30% {
+				transform: translateY(0%);
+			}
+			50% {
+				transform: translateY(-3%);
+			}
+			65% {
+				transform: translateY(0%);
+			}
+			100%{
+				transform: scale(1);
+			}
+		}
+
+		.keywords {
+			margin-left:auto;
+			margin-right:auto;
+			line-height: 1.5;
+			width: 30%;
 		}
 	}	
 }
