@@ -1,31 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { Router, Route, browserHistory } from 'react-router';
-import { createHistory } from 'history';
-
 /*
 	Components Imports
 */
 import FrontPage from '../components/front-page.js';
-import Skills from '../components/skills.js';
-import Work from '../components/work.js';
-import AboutMe from '../components/about-me.js';
-import NotFound from '../components/NotFound.js';
+
+class App extends React.Component {
+	render() {
+		return <FrontPage />
+	}
+}
 
 
-/*
-	Routes
-*/
-var routes = (
-	<Router history={createHistory()}>
-		<Route path="/" component={FrontPage} day = "wedny"/>
-		<Route path="/skills"  component={Skills}/>
-		<Route path="/work" component={Work} />
-		<Route path="/about-me" component={AboutMe} />
-		<Route path="*" component={NotFound} />
-	</Router>
-)
 
 
 
@@ -34,6 +21,6 @@ var routes = (
 */
 
 var main= document.querySelector("#main");
-ReactDOM.render(routes, main);
+ReactDOM.render(<App />, main);
 
 
